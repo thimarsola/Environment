@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo rm -rf .gitç
+sudo rm -rf .git;
 docker-compose up -d;
 curl -O https://wordpress.org/latest.zip;
 unzip latest.zip;
