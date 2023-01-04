@@ -7,6 +7,7 @@ curl -O https://wordpress.org/latest.zip && \
     rm latest.zip;
 docker-compose exec php-fpm chown -R www-data:www-data /application/public;
 sudo chmod -R 777 public/
-git clone git@github.com:thimarsola/theme.git public/wp-content/themes/theme;
-cd public/wp-content/themes/theme;
-sh ./start.sh
+cd public/wp-content/themes;
+git clone git@github.com:thimarsola/theme.git;
+cd theme;
+sh start.sh
