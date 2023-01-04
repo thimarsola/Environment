@@ -1,7 +1,5 @@
 #!/bin/bash
 
-clear
-
 rm -rf .git
 
 docker-compose up -d
