@@ -6,10 +6,7 @@ rm -rf .git
 
 docker-compose up -d
 
-curl -O https://wordpress.org/latest.zip && \
-    unzip latest.zip && \
-    mv wordpress public && \
-    rm latest.zip
+curl -O https://wordpress.org/latest.zip && unzip latest.zip && mv wordpress public && rm latest.zip
 
 docker-compose exec php-fpm chown -R www-data:www-data /application/public
 
