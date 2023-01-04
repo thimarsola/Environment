@@ -1,5 +1,5 @@
-#!/bin/sh
-rm -rf .git
+#!/bin/bash
+sudo rm -rf .gitç
 docker-compose up -d;
 curl -O https://wordpress.org/latest.zip;
 unzip latest.zip;
@@ -10,4 +10,4 @@ sudo chmod -R 777 public;
 cd public/wp-content/themes;
 git clone git@github.com:thimarsola/theme.git;
 cd theme;
-sh ./start.sh;
+sh start.sh;
