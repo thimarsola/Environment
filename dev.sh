@@ -1,5 +1,4 @@
-#!/bin/sh
-rm -rf .git
+#!/bin/bash
 docker-compose up -d;
 mkdir public
 docker-compose exec php-fpm chown -R www-data:www-data /application/public;
