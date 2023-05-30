@@ -1,4 +1,5 @@
 #!/bin/bash
+rm -rf .git
 docker-compose up -d
 mkdir public
 wget http://wordpress.org/latest.tar.gz
